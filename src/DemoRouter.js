@@ -1,6 +1,7 @@
 import Header from './Header';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import CrudDemo from './CrudDemo';
 
 const DemoRouter =() => {
     return (
@@ -11,7 +12,8 @@ const DemoRouter =() => {
                 <Route exact path="/" component={Welcome} /> 
                 <Route  path="/home" component={Home} /> 
                 <Route  path="/person" component={Person} />     
-                <Route exact path="/about" component={AboutUs} />             
+                <Route  path="/about" component={AboutUs} />   
+                <Route  path="/crud" component={CrudDemo} />            
 
                 </Switch>
             </div>
