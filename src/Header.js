@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Header =( ) => {
     return(
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-        <Link class="navbar-brand" to="/">React</Link>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
+        <Link className="navbar-brand" to="/">React</Link>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav" >
 
             <li className="nav-item">

@@ -1,23 +1,26 @@
 import Header from './Header';
-import React from 'react';
+import React,{Fragment} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import CrudDemo from './CrudDemo';
 
+
 const DemoRouter =() => {
     return (
-        <Router>
-            <Header/>
-            <div className='container '>
-                <Switch> 
-                <Route exact path="/" component={Welcome} /> 
-                <Route  path="/home" component={Home} /> 
-                <Route  path="/person" component={Person} />     
-                <Route  path="/about" component={AboutUs} />   
-                <Route  path="/crud" component={CrudDemo} />            
-
-                </Switch>
-            </div>
-        </Router>
+        <Fragment>
+            <div className='container'>
+              <Router>
+                <Header/>
+                   <Switch> 
+                           <Route exact path="/" component={Welcome} /> 
+                           <Route  path="/home" component={Home} /> 
+                           <Route  path="/person" component={Person} />     
+                           <Route  path="/about" component={AboutUs} />   
+                           <Route  path="/crud/:id" component={CrudDemo} />  
+                   </Switch>
+            
+                </Router>
+             </div>
+        </Fragment>
     )
 };
 
