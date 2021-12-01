@@ -43,7 +43,7 @@ const PersonDetails = (props) =>{
              </div>
              <div className='card-footer bg-dark'>
 
-                 <Link className='btn btn-outline-danger' to='/crud'>Back</Link>
+                 <Link className='btn btn-outline-danger' to='/crud/0'>Back</Link>
 
              </div>
 

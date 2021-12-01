@@ -29,7 +29,7 @@ const API_URL = 'https://localhost:44342/People';
     
     useEffect(async() => {
 
-        if(params.id===0)
+        if(params.id==0)
         {
             await axios.get(API_URL).then((response) => { 
                 console.log("RESPONSE: ", response);
@@ -46,12 +46,8 @@ const API_URL = 'https://localhost:44342/People';
     console.log(useParams());
 
 
-    if(params.id===0){
-
-    
-
+    if(params.id==0){
     return (
-        
         <div>
             <div className='mb-3'>
                 <form onSubmit={handleSubmit(saveData)}>
